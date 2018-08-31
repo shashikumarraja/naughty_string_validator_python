@@ -1,7 +1,6 @@
 import json
 import os
 
-# print os.listdir(r'naughty_string_db')
 with open(r'naughty_string_db/blns.json', 'r') as f:
     naughty_string_list = json.loads(f.read())
 with open(r'naughty_string_db/emoji.json', 'r') as f:
@@ -12,5 +11,5 @@ def get_naughty_string_list():
     return naughty_string_list
 
 def get_emoji_list():
-    """ Get entire naughty string list """
+    """ Get entire emoji list """
     return emoji_list

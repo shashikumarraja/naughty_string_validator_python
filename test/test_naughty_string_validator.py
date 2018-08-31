@@ -2,7 +2,8 @@
 Tests for `naughty_string_validator` module.
 """
 import pytest
-from naughty_string_validator import naughty_string_validator, get_naughty_string_list
+
+from naughty_string_validator import get_naughty_string_list
 
 
 class TestNaughty_string_validator(object):
