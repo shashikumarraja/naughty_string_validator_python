@@ -1,1 +1,2 @@
 wheel>=0.22
+pytest-cov>=2.5.1
