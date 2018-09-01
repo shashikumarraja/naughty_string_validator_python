@@ -16,7 +16,7 @@ install:
 
 # command to run tests, e.g. python setup.py test
 script:
-  - coverage run --source naughty_string_validator setup.py test
+  - py.test --cov=naughty_string_validator test/ --verbose
 
 after_success:
-  coveralls
+  - coveralls
