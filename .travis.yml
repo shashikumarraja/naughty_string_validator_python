@@ -16,4 +16,4 @@ install:
 
 # command to run tests, e.g. python setup.py test
 script:
-  - py.test --cov-report html --cov=naughty_string_validator test/
+  - py.test --cov=naughty_string_validator test/ --verbose
