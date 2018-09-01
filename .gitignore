@@ -25,6 +25,7 @@ pip-log.txt
 .coverage
 .tox
 nosetests.xml
+htmlcov
 
 # Translations
 *.mo
@@ -43,3 +44,4 @@ docs/_build
 
 .idea/
 .pytest_cache/
+.DS_Store

@@ -3,6 +3,9 @@
 language: python
 
 python:
+  - "3.7"
+  - "3.6"
+  - "3.5"
   - "3.3"
   - "2.7"
   - "2.6"
@@ -14,4 +17,4 @@ install:
 
 # command to run tests, e.g. python setup.py test
 script:
-  - py.test
+  - py.test --cov-report html --cov=naughty_string_validator test/
