@@ -1,12 +1,12 @@
 =============================
-naughty-string-validator-python
+naughty_string_validator_python
 =============================
 
 .. image:: https://badge.fury.io/py/naughty_string_validator.png
-    :target: http://badge.fury.io/py/naughty-string-validator-python
+    :target: http://badge.fury.io/py/naughty_string_validator_python
 
 .. image:: https://travis-ci.org/shashikumarraja/naughty_string_validator.png?branch=master
-    :target: https://travis-ci.org/shashikumarraja/naughty-string-validator-python
+    :target: https://travis-ci.org/shashikumarraja/naughty_string_validator_python
 
 A library that returns naughty strings from an offline database of Big List of Naughty Strings and emojis.
 

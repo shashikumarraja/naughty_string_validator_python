@@ -13,7 +13,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/shashikumarraja/naughty-string-validator-python/issues.
+Report bugs at https://github.com/shashikumarraja/naughty_string_validator_python/issues.
 
 If you are reporting a bug, please include:
 
@@ -36,14 +36,14 @@ is open to whoever wants to implement it.
 Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
-naughty-string-validator-python could always use more documentation, whether as part of the 
-official naughty-string-validator-python docs, in docstrings, or even on the web in blog posts,
+naughty_string_validator_python could always use more documentation, whether as part of the 
+official naughty_string_validator_python docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 Submit Feedback
 ~~~~~~~~~~~~~~~
 
-The best way to send feedback is to file an issue at https://github.com/shashikumarraja/naughty-string-validator-python/issues.
+The best way to send feedback is to file an issue at https://github.com/shashikumarraja/naughty_string_validator_python/issues.
 
 If you are proposing a feature:
 
@@ -58,10 +58,10 @@ Get Started!
 Ready to contribute? Here's how to set up `naughty_string_validator` for
 local development.
 
-1. Fork_ the `naughty-string-validator-python` repo on GitHub.
+1. Fork_ the `naughty_string_validator_python` repo on GitHub.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:your_name_here/naughty-string-validator-python.git
+    $ git clone git@github.com:your_name_here/naughty_string_validator_python.git
 
 3. Create a branch for local development::
 
@@ -96,7 +96,7 @@ Before you submit a pull request, check that it meets these guidelines:
    your new functionality into a function with a docstring, and add the
    feature to the list in README.rst.
 3. The pull request should work for Python 2.6, 2.7, and 3.3, and for PyPy.
-   Check https://travis-ci.org/shashikumarraja/naughty-string-validator-python
+   Check https://travis-ci.org/shashikumarraja/naughty_string_validator_python
    under pull requests for active pull requests or run the ``tox`` command and
    make sure that the tests pass for all supported Python versions.
 

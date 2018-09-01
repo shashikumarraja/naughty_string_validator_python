@@ -28,7 +28,7 @@ setup(
     long_description=readme + '\n\n' + doclink + '\n\n' + history,
     author='Shashi Kumar Raja',
     author_email='shashiraja92@gmail.com',
-    url='https://github.com/shashikumarraja/naughty-string-validator-python',
+    url='https://github.com/shashikumarraja/naughty_string_validator_python',
     packages=[
         'naughty_string_validator',
     ],

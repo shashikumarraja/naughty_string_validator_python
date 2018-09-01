@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'naughty-string-validator-python'
+project = u'naughty_string_validator_python'
 copyright = u'2018, Shashi Kumar Raja'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -192,7 +192,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'naughty_string_validator.tex', u'naughty-string-validator-python Documentation',
+  ('index', 'naughty_string_validator.tex', u'naughty_string_validator_python Documentation',
    u'Shashi Kumar Raja', 'manual'),
 ]
 
@@ -222,7 +222,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'naughty_string_validator', u'naughty-string-validator-python Documentation',
+    ('index', 'naughty_string_validator', u'naughty_string_validator_python Documentation',
      [u'Shashi Kumar Raja'], 1)
 ]
 
@@ -236,7 +236,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'naughty_string_validator', u'naughty-string-validator-python Documentation',
+  ('index', 'naughty_string_validator', u'naughty_string_validator_python Documentation',
    u'Shashi Kumar Raja', 'naughty_string_validator', 'One line description of project.',
    'Miscellaneous'),
 ]

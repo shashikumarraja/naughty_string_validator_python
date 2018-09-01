@@ -20,8 +20,8 @@ Contents:
 Feedback
 ========
 
-If you have any suggestions or questions about **naughty-string-validator-python** feel free to email me
+If you have any suggestions or questions about **naughty_string_validator_python** feel free to email me
 at shashiraja92@gmail.com.
 
-If you encounter any errors or problems with **naughty-string-validator-python**, please let me know!
-Open an Issue at the GitHub http://github.com/shashikumarraja/naughty-string-validator-python main repository.
+If you encounter any errors or problems with **naughty_string_validator_python**, please let me know!
+Open an Issue at the GitHub http://github.com/shashikumarraja/naughty_string_validator_python main repository.
