@@ -18,10 +18,10 @@ import sys, os
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
 
-cwd = os.getcwd()
-parent = os.path.dirname(cwd)
-sys.path.insert(0, parent)
-sys.path.insert(0, os.path.abspath('../naughty_string_validator'))
+# cwd = os.getcwd()
+# parent = os.path.dirname(cwd)
+# sys.path.insert(0, parent)
+sys.path.insert(0, os.path.abspath('..'))
 
 import naughty_string_validator
 
