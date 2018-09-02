@@ -7,7 +7,6 @@ History
 ++++++++++++++++++
 * Removed test from build.
 
-* First release on PyPI.
 0.1.0 (2018-09-03)
 ++++++++++++++++++
 

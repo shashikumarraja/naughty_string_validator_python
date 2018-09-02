@@ -18,7 +18,7 @@ doclink = """
 Documentation
 -------------
 
-The full documentation is at https://naughty-string-validator-python.readthedocs.io/en/latest/index.html ."""
+The full documentation is at https://naughty-string-validator-python.readthedocs.io/en/latest/index.html."""
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
