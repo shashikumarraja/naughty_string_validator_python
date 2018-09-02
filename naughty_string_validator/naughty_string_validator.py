@@ -1,12 +1,16 @@
 import json
 import random
 import sys
+import os
 
 __all__ = ['get_naughty_string_list', 'get_emoji_list', 'get_random_naughty_string', 'get_random_emoji']
 
-with open(r'naughty_string_validator/naughty_string_db/blns.json', 'r') as f:
+this_directory = os.path.dirname(__file__)
+
+with open( os.path.join(this_directory, 'naughty_string_db/blns.json'), 'r') as f:
     naughty_string_list = json.loads(f.read())
-with open(r'naughty_string_validator/naughty_string_db/emoji.json', 'r') as f:
+    
+with open( os.path.join(this_directory, 'naughty_string_db/emoji.json'), 'r') as f:
     emoji_list =json.loads(f.read())
 
 def get_naughty_string_list():

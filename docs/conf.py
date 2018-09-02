@@ -21,8 +21,7 @@ import sys, os
 # cwd = os.getcwd()
 # parent = os.path.dirname(cwd)
 # sys.path.insert(0, parent)
-# sys.path.insert(0, os.path.abspath('..'))
-sys.path.append(os.path.join(os.path.dirname(__name__), '..'))
+sys.path.insert(0, os.path.abspath('..'))
 
 import naughty_string_validator
 
