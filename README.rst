@@ -3,7 +3,7 @@ naughty_string_validator
 ==========================================================
 
 .. image:: https://badge.fury.io/py/naughty_string_validator.png
-    :target: http://badge.fury.io/py/naughty_string_validator_python
+    :target: http://badge.fury.io/py/naughty_string_validator
 
 .. image:: https://travis-ci.org/shashikumarraja/naughty_string_validator_python.svg?branch=master
     :target: https://travis-ci.org/shashikumarraja/naughty_string_validator_python
