@@ -21,6 +21,7 @@ import sys, os
 cwd = os.getcwd()
 parent = os.path.dirname(cwd)
 sys.path.insert(0, parent)
+sys.path.insert(0, os.path.abspath('..naughty_string_validator/naughty_string_db'))
 
 import naughty_string_validator
 
