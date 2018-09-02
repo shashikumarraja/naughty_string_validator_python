@@ -4,3 +4,4 @@ include HISTORY.rst
 include LICENSE
 include README.rst
 include naughty_string_validator/naughty_string_db/*.json
+prune test
