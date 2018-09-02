@@ -18,9 +18,9 @@ import sys, os
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
 
-cwd = os.getcwd()
-parent = os.path.dirname(cwd)
-sys.path.insert(0, parent)
+# cwd = os.getcwd()
+# parent = os.path.dirname(cwd)
+# sys.path.insert(0, parent)
 
 import naughty_string_validator
 
