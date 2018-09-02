@@ -38,7 +38,7 @@ setup(
     ],
     license='MIT',
     zip_safe=False,
-    keywords='naughty_string_validator',
+    keywords='naughty_string_validator strings emoji',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',

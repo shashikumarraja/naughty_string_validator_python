@@ -11,6 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   naughty_string_validator
    installation
    usage
    contributing
