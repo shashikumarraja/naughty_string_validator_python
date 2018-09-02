@@ -32,7 +32,7 @@ Usage
 
 .. code-block:: python
 
-    get_random_naughty_string()
+    print(get_random_naughty_string())
 
     #output
     "<a href=\"\\xE2\\x80\\x88javascript…(1)\" id=\"fuzzelement1\">test</a>"
@@ -42,7 +42,7 @@ Usage
 
 .. code-block:: python
 
-    get_naughty_string_list()
+    print(get_naughty_string_list())
 
     #output
     ["", "undefined", "undef", "null", "NULL", "(null)", "nil", …]
@@ -51,7 +51,7 @@ Usage
 
 .. code-block:: python
 
-    get_random_emoji()
+    print(get_random_emoji())
 
     #output
     "😃"
@@ -60,7 +60,7 @@ Usage
   
 .. code-block:: python
 
-    get_emoji_list()
+    print(get_emoji_list())
 
     #output
     ["😀", "😃", "😄", "😁", "😆", "😅", "😂", "🤣", "☺️", "😊", …]
