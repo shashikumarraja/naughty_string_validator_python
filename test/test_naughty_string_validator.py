@@ -1,9 +1,12 @@
 """
 Tests for `naughty_string_validator` module.
 """
+from __future__ import unicode_literals
+
 import sys
 import os
 import pytest
+from builtins import str
 
 from naughty_string_validator import *
 
@@ -33,10 +36,10 @@ class TestNaughty_string_validator(object):
         assert type(get_emoji_list()) is list
 
     def test_type_of_random_naughty_string(self):
-        assert type(get_random_naughty_string()) is str
+        assert isinstance(get_random_naughty_string(), str) == True
 
     def test_type_of_random_emoji(self):
-        assert type(get_random_emoji()) is str
+        assert isinstance(get_random_emoji(), str) == True
 
     @classmethod
     def teardown_class(cls):

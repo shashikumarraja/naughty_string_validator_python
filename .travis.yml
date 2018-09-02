@@ -19,4 +19,5 @@ script:
   - py.test --cov=naughty_string_validator test/ --verbose
 
 after_success:
-  - coveralls
+- coverage combine --append
+- coveralls

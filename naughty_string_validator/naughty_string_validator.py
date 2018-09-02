@@ -14,7 +14,7 @@ def get_naughty_string_list():
 
 def get_random_naughty_string():
     """ Get a random naughty string """
-    return (random.choice(naughty_string_list)).encode('utf-8')
+    return (random.choice(naughty_string_list)).encode('utf-8').decode('utf-8')
 
 def get_emoji_list():
     """ Get entire emoji list """
@@ -22,4 +22,4 @@ def get_emoji_list():
 
 def get_random_emoji():
     """ Get a random emoji """
-    return (random.choice(get_emoji_list())).encode('utf-8')
+    return (random.choice(get_emoji_list())).encode('utf-8').decode('utf-8')
