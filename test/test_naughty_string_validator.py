@@ -3,6 +3,7 @@ Tests for `naughty_string_validator` module.
 """
 from __future__ import unicode_literals
 
+import inspect
 import os
 from builtins import str
 
@@ -20,11 +21,13 @@ class TestNaughtyStringValidator(object):
         assert len(os.listdir(os.path.join(SRC_DIRECTORY, 'naughty_string_db'))) == 2
 
     def test_function_names_of_naughty_string_validator(self):
-        main_module = self.string_validator.__dir__()
-        assert 'get_naughty_string_list' in main_module
-        assert 'get_emoji_list' in main_module
-        assert 'get_random_naughty_string' in main_module
-        assert 'get_random_emoji' in main_module
+        validator_methods = [
+            attr for attr in dir(self.string_validator) if inspect.ismethod(getattr(self.string_validator, attr))
+        ]
+        assert 'get_naughty_string_list' in validator_methods
+        assert 'get_emoji_list' in validator_methods
+        assert 'get_random_naughty_string' in validator_methods
+        assert 'get_random_emoji' in validator_methods
 
     def test_len_of_naughty_string_list(self):
         assert len(self.string_validator.get_naughty_string_list()) > 0
