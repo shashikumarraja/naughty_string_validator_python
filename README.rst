@@ -18,6 +18,13 @@ naughty_string_validator
 .. image:: https://pyup.io/repos/github/shashikumarraja/naughty_string_validator_python/python-3-shield.svg
      :target: https://pyup.io/repos/github/shashikumarraja/naughty_string_validator_python/
      :alt: Python 3
+     
+.. image:: https://pepy.tech/badge/naughty-string-validator
+     :target: https://pepy.tech/project/naughty-string-validator
+       
+.. image:: https://img.shields.io/badge/License-MIT-blue.svg
+     :target: https://opensource.org/licenses/MIT
+     
 
 A python library that returns `naughty strings` from an offline database of `Big List of Naughty Strings <https://github.com/minimaxir/big-list-of-naughty-strings>`_ and emojis. The db will be continuously growing with each release.
 
