@@ -17,6 +17,8 @@ develop-eggs
 .installed.cfg
 lib
 lib64
+docs
+.pypirc
 
 # Installer logs
 pip-log.txt
@@ -42,7 +44,17 @@ output/*/index.html
 # Sphinx
 docs/docs/_build
 
+# IDE
 .idea/
-.pytest_cache/
 .DS_Store
 .vscode
+
+# Cache
+.pytest_cache/
+*/__pycache__
+
+# Virtual environment
+venv
+VENV
+.venv
+.VENV

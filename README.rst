@@ -2,8 +2,8 @@
 naughty_string_validator
 ==========================================================
 
-.. image:: https://badge.fury.io/py/naughty-string-validator.svg
-    :target: https://badge.fury.io/py/naughty-string-validator
+.. image:: https://pypi.org/project/naughty-string-validator/0.1.2.svg
+    :target: https://pypi.org/project/naughty-string-validator/0.1.2
 
 .. image:: https://travis-ci.org/shashikumarraja/naughty_string_validator_python.svg?branch=master
     :target: https://travis-ci.org/shashikumarraja/naughty_string_validator_python
