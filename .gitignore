@@ -17,7 +17,7 @@ develop-eggs
 .installed.cfg
 lib
 lib64
-docs
+docs/_build
 .pypirc
 
 # Installer logs
