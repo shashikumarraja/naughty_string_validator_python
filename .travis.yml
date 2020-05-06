@@ -25,7 +25,7 @@ deploy:
   # To testpypi without tag change
   - provider: pypi
     distributions: sdist bdist_wheel
-    server: https://testpypi.python.org/pypi
+    server: https://test.pypi.org/legacy/
     skip_cleanup: true
     user: __token__
     password:
