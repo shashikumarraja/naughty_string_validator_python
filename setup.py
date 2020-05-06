@@ -24,7 +24,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
     name='naughty_string_validator',
-    version='0.1.3',
+    version='0.1.4',
     description='A library that returns naughty strings \
     from an offline database of Big List of Naughty Strings & emojis',
     long_description=readme + '\n\n' + doclink + '\n\n' + history,
