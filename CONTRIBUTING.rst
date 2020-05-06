@@ -84,7 +84,7 @@ To get tox, just pip install it.
 
 6. Submit a pull request through the GitHub website.
 
-.. _Fork: https://github.com/Nekroze/naughty_string_validator/fork
+.. _Fork: 
 
 Pull Request Guidelines
 -----------------------
