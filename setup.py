@@ -40,9 +40,9 @@ setup(
     ],
     license='MIT',
     zip_safe=False,
-    keywords='naughty_string_validator strings emoji',
+    keywords='naughty strings emoji unicode',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
