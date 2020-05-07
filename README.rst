@@ -2,8 +2,11 @@
 naughty_string_validator
 ==========================================================
 
-.. image:: https://pypi.org/project/naughty-string-validator/0.1.2.svg
-    :target: https://pypi.org/project/naughty-string-validator/0.1.2
+.. image:: https://img.shields.io/pypi/v/naughty-string-validator.svg
+      :target: https://pypi.python.org/pypi/naughty-string-validator/
+
+.. image:: https://img.shields.io/pypi/pyversions/naughty-string-validator.svg
+      :target: https://pypi.python.org/pypi/naughty-string-validator/
 
 .. image:: https://travis-ci.org/shashikumarraja/naughty_string_validator_python.svg?branch=master
     :target: https://travis-ci.org/shashikumarraja/naughty_string_validator_python
@@ -14,10 +17,6 @@ naughty_string_validator
 .. image:: https://pyup.io/repos/github/shashikumarraja/naughty_string_validator_python/shield.svg
      :target: https://pyup.io/repos/github/shashikumarraja/naughty_string_validator_python/
      :alt: Updates
-
-.. image:: https://pyup.io/repos/github/shashikumarraja/naughty_string_validator_python/python-3-shield.svg
-     :target: https://pyup.io/repos/github/shashikumarraja/naughty_string_validator_python/
-     :alt: Python 3
      
 .. image:: https://pepy.tech/badge/naughty-string-validator
      :target: https://pepy.tech/project/naughty-string-validator
