@@ -11,9 +11,6 @@ naughty_string_validator
 .. image:: https://travis-ci.org/shashikumarraja/naughty_string_validator_python.svg?branch=master
     :target: https://travis-ci.org/shashikumarraja/naughty_string_validator_python
 
-.. image:: https://coveralls.io/repos/github/shashikumarraja/naughty_string_validator_python/badge.svg?branch=master
-    :target: https://coveralls.io/github/shashikumarraja/naughty_string_validator_python?branch=master
-
 .. image:: https://codecov.io/gh/shashikumarraja/naughty_string_validator_python/branch/master/graph/badge.svg
   :target: https://codecov.io/gh/shashikumarraja/naughty_string_validator_python
 

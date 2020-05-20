@@ -2,6 +2,7 @@ __author__ = 'Shashi Kumar Raja'
 __email__ = 'shashiraja92@gmail.com'
 __version__ = '0.1.5'
 
+from .utils import FileUtils    # noqa: F401
 from .naughty_string_validator import Naughty
 naughty = Naughty()
 get_naughty_string_list = naughty.get_naughty_string_list
