@@ -2,7 +2,7 @@ import json
 import io
 
 
-class FileUtils():
+class FileUtils:
 
     def __init__(self):
         pass

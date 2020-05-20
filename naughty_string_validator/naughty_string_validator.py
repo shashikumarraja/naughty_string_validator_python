@@ -3,7 +3,7 @@ import os
 from utils.file_utils import FileUtils
 
 
-class Naughty():
+class Naughty:
 
     def __init__(self):
         self.file_utils = FileUtils()
@@ -19,12 +19,12 @@ class Naughty():
 
     def get_random_naughty_string(self):
         """ Get a random naughty string """
-        return (random.choice(self.naughty_string_list))
+        return random.choice(self.naughty_string_list)
 
     def get_emoji_list(self):
         """ Get entire emoji list """
-        return list(map(lambda x: x.get('emoji'), self.emoji_list))
+        return [emoji.get('emoji', '') for emoji in self.emoji_list]
 
     def get_random_emoji(self):
         """ Get a random emoji """
-        return (random.choice(self.get_emoji_list()))
+        return random.choice(self.get_emoji_list())

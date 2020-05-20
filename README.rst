@@ -14,6 +14,9 @@ naughty_string_validator
 .. image:: https://coveralls.io/repos/github/shashikumarraja/naughty_string_validator_python/badge.svg?branch=master
     :target: https://coveralls.io/github/shashikumarraja/naughty_string_validator_python?branch=master
 
+.. image:: https://codecov.io/gh/shashikumarraja/naughty_string_validator_python/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/shashikumarraja/naughty_string_validator_python
+
 .. image:: https://pyup.io/repos/github/shashikumarraja/naughty_string_validator_python/shield.svg
      :target: https://pyup.io/repos/github/shashikumarraja/naughty_string_validator_python/
      :alt: Updates
