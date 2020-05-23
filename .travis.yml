@@ -33,6 +33,7 @@ deploy:
     repo: shashikumarraja/naughty_string_validator_python
     branch: master
     python: 3.8
+    condition: $(sh pre-deploy.sh) = "True"
 notifications:
   slack:
     secure: IwWd1f3xD8zEVejdshD7L0zYImmUiBa6paAQHqXtGSTUc8/upPyCyw/lHLCxSspJKQs4EzZoAR02hh2MWu5sJoLNxQyI9ksPg9GZubydmfJX1jMTug5+e7nXSWrz/Fg48CK0s8RMizEA1l5Gmvl7xY0zUQ59MDAhTSdgGE0PPef2DqE089+OmxQWUPProOz1yqUZVDghI8hPF/AJLuJJIK95Mjvr9EpLBeEhdKwX3xACpm/i1wruAE1F1vaWEYMaUs0CsdgqAOxenMXNoOtKLJhiPdhFZPmTkk2Iny+UiFPQ4JxnU6x15LJ/FY8rBj9Uhk3sKN3kdg3WwHvpGyNXtiDRMuUH+IvbPZEP+eEZ7c3cNYjaUhL9lplGqDwX5EPmsHo+u2MOLU+8F9O6wUozlAk1MspxwL7pWjTgyAqL86SwRMrmx0Kjro+AXL7kWmPlPI8ukPDJG6YPv2R0UAXZpiD2Lrj71w/4ZMQg9YRUo9XJ4wTZh8s6rpyryiGcuVgIWGa/r8Ig/YpNLWk/qruwzUn9BsmPHPMeDze+FA2dMdtSpmusR6NbUDZW9Y9K5jZ/eBtXtURjOhutcrZGooMrcV4vJ6xevyq3J2vfR5WzhdThsEfntA4iiBD/V1nX3uRD3JAEWKQclqVJr9TfqlKj8W1j0w+NVfaFyMd3/UNvJ0A=
