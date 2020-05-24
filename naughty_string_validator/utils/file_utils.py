@@ -12,5 +12,5 @@ class FileUtils:
             with io.open(path, 'r', encoding='utf8') as f:
                 content = json.loads(f.read())
             return content
-        except Exception as e:
-            print (e)
+        except IOError as e:
+            raise e
