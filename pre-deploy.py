@@ -22,11 +22,10 @@ def get_current_version_to_deploy():
 def deploy():
     deployed_version = get_latest_nsv_version_from_pypi()
     current_version = get_current_version_to_deploy()
+    # return success code 0 when deployment is needed
     if current_version > deployed_version:
-        print(True)
-        sys.exit(0)
-    print(False)
-    sys.exit(1)
+        return sys.exit(0)
+    return sys.exit(1)
 
 if __name__ == "__main__":
     deploy()
