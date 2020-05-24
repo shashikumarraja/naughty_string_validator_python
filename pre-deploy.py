@@ -1,7 +1,7 @@
 import sys
 import json
 import requests
-from backports.configparser import ConfigParser
+from configparser import ConfigParser
 
 base_test_pypi_url = "https://test.pypi.org/pypi/naughty-string-validator/json"
 
