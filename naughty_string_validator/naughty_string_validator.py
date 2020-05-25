@@ -1,6 +1,6 @@
 import random
 import os
-from utils import FileUtils
+from .utils import FileUtils
 
 
 class Naughty:
