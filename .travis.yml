@@ -1,24 +1,40 @@
-# Config file for automatic testing at travis-ci.org
-
 language: python
-
 python:
-  - "3.6"
-  - "3.5"
-  - "3.4"
-  - "3.3"
-  - "2.7"
-  - "2.6"
-  - "pypy"
-
-# command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-install: 
-  - pip install -r requirements.txt
-
-# command to run tests, e.g. python setup.py test
-script:
-  - py.test --cov=naughty_string_validator --verbose
-
+- '3.8'
+- '3.7'
+- '3.6'
+- '3.5'
+- '2.7'
+- pypy
+install: pip install -U tox-travis codecov
+script: tox
 after_success:
-- coverage combine --append
-- coveralls
+  - codecov
+  - source ./pre-deploy.sh
+deploy:
+- provider: pypi
+  distributions: sdist bdist_wheel
+  skip_cleanup: true
+  user: __token__
+  password:
+    secure: vP9Xk0/F1C+Rc21y2UEp4g9t2wcEzGdqdJOP2PIau0wWkiyHtCU4DNZDTZP+wtd9pSbKpqj4FC6KKUtGzNDUMGamOvwF69y71wkmGNttSPzAqLCslbEscG9T5DM6soUcGfuNJddUTvDm2B6x0L7kTknqPveQbWscQKPqC+Y/P/o6BIQ1/B5OfP6hXagrNfUWZ71jzY7sjpX3bcMSyojweYgBlUv2NhpxbVYT7XEGOXGGnNexUF+gUKDPBnfwwn1asdiWAp1a36uf1Ua3Krb/GCbtvcDG+bKZGopBShEAT5ijZ+G4/X+MUeBEG28CCS9QG/Cs2aZiiTd/2pE2VD2s4bxMIEhEcf+N+3OdS7yYtBIREzSXRvjA9CrBDqOJ1hVmVNfCVGIycFyElMrdhr9foQnk0+cSiwkX8MQakRE85qjX1hTFxno1q2/vc4nfchpjrTcCMxGA0ogIUyt2dw3feno1xfdt65VtVdJvr5E7aOBV1LYKpsFkDi6JrPOq2NYoCz0ImbyQlH848MutpKIRQG6pbBsTqzOmh+vQ4U2vIodKzVasTTpabeqyAPzHvbSWq+CTm7Ixjc2BitWyyNBr7eeKOFNVbL0yKitWBlR7ASgJpTqtHaLDd+5Vp/8toxEmInb5/tLjpbv720myffR/lmW+ai8p+1QPZ3NrMkETzz4=
+  on:
+    tags: true
+    repo: shashikumarraja/naughty_string_validator_python
+    branch: master
+    python: 3.8
+- provider: pypi
+  distributions: sdist bdist_wheel
+  server: https://test.pypi.org/legacy/
+  skip_cleanup: true
+  user: __token__
+  password:
+    secure: IMiBlGU4q7JrMJsP93gK7XXQKy0GdD6vmSsWjKEZUBvYaTdv5p0AbXJEyXG3qI4TUUEVCTGrRGJCWbhInsOmVMAxnYXB/Y28NHMmSHUyM7hqa09kVf1tznI75iA3xCWhdE9+kC6ZuvyGrQ8wYNEwp6TC7p1ExThM3uvUW7N8qPbDstV2dG8xIm8UdJ+z08YxaNbmmOyCJH9vCcC+aHXZuzv8j0DyDrKK/0k6NwSNpIEO/Hb3ZUAUr/zPQWuEfoWvOS83iLCGA+FXnz9CFCfTnogXi+vs0xax0GxIXaBMK/l3azj7l46CTvoaftfpysM0Ma43Aq/IyOjb1feTyzHPCGacE2prJeUUZIu9P/Urt4heS+XeaT2XyibC1u6iNI74RuBPFislkQ5EsWo5M4R10VrdfasnrK45B8qJghjIPU+kkd73IKIgsB9idOTg69q7s+rrj5uq8qsklSZaNbzzg98GdMZ1j7NrywYMFOaRnQjnGCv1azccrUQ7tPJzmVy2Gtt/c10A8IZ4AkhjnenS+prM/2s9z9a+UHZw+8CeDZ9/fghg3vnBBLTiOUoPEzHVcX3EdAc+XIrrKvVFooTvP7c1MbER2C/9fOLk2g8f4JweGYfg1OaSqnViDUsY0zm/ILDUp6cwWypTB194x6BmKd7+zCqrZGBw2vRrM2QFijA=
+  on:
+    repo: shashikumarraja/naughty_string_validator_python
+    branch: master
+    python: 3.8
+    condition: "$TEST_DEPLOY = true"
+notifications:
+  slack:
+    secure: IwWd1f3xD8zEVejdshD7L0zYImmUiBa6paAQHqXtGSTUc8/upPyCyw/lHLCxSspJKQs4EzZoAR02hh2MWu5sJoLNxQyI9ksPg9GZubydmfJX1jMTug5+e7nXSWrz/Fg48CK0s8RMizEA1l5Gmvl7xY0zUQ59MDAhTSdgGE0PPef2DqE089+OmxQWUPProOz1yqUZVDghI8hPF/AJLuJJIK95Mjvr9EpLBeEhdKwX3xACpm/i1wruAE1F1vaWEYMaUs0CsdgqAOxenMXNoOtKLJhiPdhFZPmTkk2Iny+UiFPQ4JxnU6x15LJ/FY8rBj9Uhk3sKN3kdg3WwHvpGyNXtiDRMuUH+IvbPZEP+eEZ7c3cNYjaUhL9lplGqDwX5EPmsHo+u2MOLU+8F9O6wUozlAk1MspxwL7pWjTgyAqL86SwRMrmx0Kjro+AXL7kWmPlPI8ukPDJG6YPv2R0UAXZpiD2Lrj71w/4ZMQg9YRUo9XJ4wTZh8s6rpyryiGcuVgIWGa/r8Ig/YpNLWk/qruwzUn9BsmPHPMeDze+FA2dMdtSpmusR6NbUDZW9Y9K5jZ/eBtXtURjOhutcrZGooMrcV4vJ6xevyq3J2vfR5WzhdThsEfntA4iiBD/V1nX3uRD3JAEWKQclqVJr9TfqlKj8W1j0w+NVfaFyMd3/UNvJ0A=

@@ -24,4 +24,4 @@ If you have any suggestions or questions about **naughty_string_validator_python
 at shashiraja92@gmail.com.
 
 If you encounter any errors or problems with **naughty_string_validator_python**, please let me know!
-Open an Issue at the GitHub http://github.com/shashikumarraja/naughty_string_validator_python main repository.
+Open an Issue at the GitHub https://github.com/shashikumarraja/naughty_string_validator_python main repository.

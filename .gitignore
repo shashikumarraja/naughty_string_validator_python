@@ -17,12 +17,15 @@ develop-eggs
 .installed.cfg
 lib
 lib64
+docs/_build
+.pypirc
 
 # Installer logs
 pip-log.txt
 
 # Unit test / coverage reports
 .coverage
+.coverage.*
 .tox
 nosetests.xml
 htmlcov
@@ -40,9 +43,20 @@ output/*.html
 output/*/index.html
 
 # Sphinx
-docs/_build
+docs/docs/_build
 
+# IDE
 .idea/
-.pytest_cache/
 .DS_Store
 .vscode
+
+# Cache
+.pytest_cache/
+*/__pycache__
+*/*/__pycache__
+
+# Virtual environment
+venv
+VENV
+.venv
+.VENV
